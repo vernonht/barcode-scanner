@@ -2,7 +2,9 @@ import pkg from './package'
 
 export default {
   mode: 'spa',
-
+  server: {
+      port: 8000,
+  },
   /*
   ** Headers of the page
   */
