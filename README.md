@@ -1,6 +1,6 @@
-# hg-kidsgen
+# barcode-scanner
 
-> Attendance system for HG KidsGen
+> Scan barcode using phone/laptop camera with QuaggaJS
 
 ## Build Setup
 
