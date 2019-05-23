@@ -45,6 +45,11 @@ export default {
       scanned_data: []
     }
   },
+  watch: {
+    detected: function (val) {
+      this.scanned_data = []
+    },
+  },
   methods: {
     logIt (data) {
         if(this.scanned_data.length <5) {
@@ -52,6 +57,7 @@ export default {
             this.scanned_data.push(data.codeResult.code)
         } else {
             if(this.scanned_data.every( (val, i, arr) => val === arr[0] )) {
+                console.warn(this.scanned_data[0]);
                 this.detected = this.scanned_data[0]
             } else {
                 // clear data if failed
