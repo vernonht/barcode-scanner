@@ -53,6 +53,9 @@ export default {
         } else {
             if(this.scanned_data.every( (val, i, arr) => val === arr[0] )) {
                 this.detected = this.scanned_data[0]
+            } else {
+                // clear data if failed
+                this.scanned_data = []
             }
         }
         // this.$router.push(`/${data.codeResult.code}`)
