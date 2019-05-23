@@ -1,6 +1,6 @@
 <template>
   <div class="flex" v-if="detected == ''">
-    <v-quagga :onDetected="logIt" :readerSize="readerSize" :readerTypes="['code_128_reader']"></v-quagga>
+    <v-quagga :onDetected="logIt" :readerSize="readerSize" :readerTypes="readerTypes"></v-quagga>
   </div>
   <div class="flex flex-col my-10" v-else>
       <span class="mx-auto mb-4">Barcode:</span>
@@ -28,6 +28,19 @@ export default {
         width: 100,
         height: 100
       },
+      readerTypes: [
+          'code_128_reader',
+          'ean_reader',
+          'ean_8_reader',
+          'code_39_reader',
+          'code_39_vin_reader',
+          'codabar_reader',
+          'upc_reader',
+          'upc_e_reader',
+          'i2of5_reader',
+          '2of5_reader',
+          'code_93_reader',
+      ],
       detected: '',
       scanned_data: []
     }

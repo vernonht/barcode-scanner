@@ -10,7 +10,7 @@
       </h2>
       <div class="links">
         <nuxt-link
-          to="/attendance"
+          to="/scanner"
           class="button--grey"
         >Scan Barcode</nuxt-link>
       </div>
