@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo />
+      <Logo />
       <h1 class="title">
         barcode-scanner
       </h1>
@@ -9,23 +9,19 @@
         Using phone camera to capture barcode
       </h2>
       <div class="links">
-        <nuxt-link
+        <NuxtLink
           to="/scanner"
           class="button--grey"
-        >Scan Barcode</nuxt-link>
+        >Scan Barcode</NuxtLink>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+<script setup>
+useHead({
+  title: 'barcode-scanner'
+})
 </script>
 
 <style>

@@ -67,6 +67,10 @@ typings/
 
 # nuxt.js build output
 .nuxt
+.output
+
+# macOS metadata
+.DS_Store
 
 # Nuxt generate
 dist

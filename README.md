@@ -1,6 +1,6 @@
-# hg-kidsgen
+# barcode-scanner
 
-> Attendance system for HG KidsGen
+> Barcode scanner app using a phone camera (Nuxt 4)
 
 ## Build Setup
 
@@ -8,7 +8,7 @@
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:8000
 $ npm run dev
 
 # build for production and launch server
@@ -19,4 +19,14 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Stack
+
+- Nuxt 4 (SPA mode)
+- Tailwind CSS 3
+- Quagga2 for barcode scanning
+- Vite PWA module
+
+## Notes
+
+- Camera access requires HTTPS on most mobile browsers.
+- Scanner route should be tested on real devices (iOS Safari and Android Chrome).
