@@ -11,7 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@ericblade/quagga2": "^1.8.4",
+    "@ericblade/quagga2": "^1.12.1",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@vite-pwa/nuxt": "^1.0.1",
     "cross-env": "^7.0.3",
@@ -21,5 +21,8 @@
     "autoprefixer": "^10.4.20",
     "nodemon": "^3.1.10",
     "tailwindcss": "^3.4.17"
+  },
+  "overrides": {
+    "sharp": "^0.35.3"
   }
 }
